@@ -1,0 +1,46 @@
+# ---------- Terraform: estado (contiene el token de Redis y datos sensibles) ----------
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+crash.*.log
+
+# ---------- Terraform: planes y overrides ----------
+*.tfplan
+tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ---------- Artefactos de build ----------
+lambda_function.zip
+*.zip
+
+# ---------- Secretos y credenciales ----------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials
+.aws/
+
+# ---------- Archivos temporales de pruebas ----------
+evt.json
+out.json
+body.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- Editores y sistema operativo ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
